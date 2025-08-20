@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Validación Zod</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Registro de Usuario</h1>
+
+    <form id="registroForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <p class="error" id="errorNombre"></p>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+      <p class="error" id="errorEmail"></p>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password">
+      <p class="error" id="errorPassword"></p>
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Importamos Zod desde CDN -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
