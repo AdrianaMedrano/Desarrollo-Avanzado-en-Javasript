@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Eventos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🎉 Registro de Eventos</h1>
+    <form id="myForm">
+
+      <!-- Datos personales -->
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 5551234567">
+
+      <!-- Intereses -->
+      <fieldset>
+        <legend>Intereses</legend>
+        <label><input type="checkbox" name="intereses" value="Tecnología"> Tecnología</label>
+        <label><input type="checkbox" name="intereses" value="Negocios"> Negocios</label>
+        <label><input type="checkbox" name="intereses" value="Arte"> Arte</label>
+      </fieldset>
+
+      <!-- Horario preferido -->
+      <fieldset>
+        <legend>Horario preferido</legend>
+        <label><input type="radio" name="horario" value="Mañana" required> Mañana</label>
+        <label><input type="radio" name="horario" value="Tarde"> Tarde</label>
+        <label><input type="radio" name="horario" value="Noche"> Noche</label>
+      </fieldset>
+
+      <!-- Fecha -->
+      <label for="fecha">Fecha del evento:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <!-- Archivo -->
+      <label for="archivo">Subir identificación (opcional):</label>
+      <input type="file" id="archivo" name="archivo" accept=".jpg,.png,.pdf">
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <!-- Aquí aparecerán los resultados -->
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
